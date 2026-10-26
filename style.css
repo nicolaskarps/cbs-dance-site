@@ -70,3 +70,10 @@ img{max-width:100%}.button{max-width:100%;gap:16px;line-height:1.5}
 #profile-title{font-size:36px;margin:0 0 10px;line-height:1.1}.profile-role{font-size:14px;line-height:1.6;margin:0}.profile-bio{font-size:14px;line-height:1.8;margin-top:20px}
 .space-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.space-card>img[src*="terceira-sala"]{object-position:center 56%}
 @media(max-width:760px){.space-grid{grid-template-columns:1fr}.teacher-thumb{min-width:0;width:100%;flex:auto}.teacher-thumb img{width:90px;height:112px}.teacher-thumb span{font-size:14px}#profile-dialog{padding:16px}.profile-photo{max-height:60svh}#profile-title{font-size:30px}}
+
+/* Release profissional: leitura confortável em todas as telas. */
+#profile-dialog.has-bio{width:min(760px,94vw);overflow-y:auto;overscroll-behavior:contain}
+.has-bio .profile-photo{max-height:48svh}
+.has-bio .profile-bio{font-size:16px;line-height:1.8;overflow-wrap:break-word}
+.profile-bio p{margin:0 0 1.25em}
+@media(max-width:760px){.has-bio .profile-photo{max-height:42svh}.has-bio .profile-role{font-size:14px}.has-bio .profile-bio{font-size:16px;line-height:1.75}}
